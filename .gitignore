@@ -3,3 +3,5 @@
 .classpath
 .designer
 target
+.settings
+rebel.xml

@@ -22,6 +22,8 @@ import com.vaadin.ui.declarative.Design;
 @SuppressWarnings("serial")
 public class ProductFormDesign extends VerticalLayout {
 	protected TextField productName;
+	protected TextField price;
+	protected TextField stockCount;
 	protected ComboBox availability;
 	protected OptionGroup category;
 	protected Button save;
