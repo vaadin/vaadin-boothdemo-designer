@@ -1,18 +1,21 @@
 <!doctype html>
 <html>
- <head>
+ <head>  
   <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
   <meta charset="UTF-8" name="package-mapping" content="x:com.vaadin.javaone.samples.crud">
  </head> 
  <body> 
   <vaadin-vertical-layout style-name="product-form" spacing id="product-form" size-full> 
-   <vaadin-text-field caption="Product name" width-full _id="productName"></vaadin-text-field> 
-   <vaadin-combo-box caption="Availability" width-full _id="availability"></vaadin-combo-box> 
-   <vaadin-option-group caption="Categories" item-caption-mode="id" width-full _id="category"> 
-    <option>Option 1</option> 
-    <option>Option 2</option> 
-    <option>Option 3</option> 
-   </vaadin-option-group> 
+   <vaadin-vertical-layout spacing> 
+    <vaadin-text-field caption="Product name" width-full _id="productName"></vaadin-text-field> 
+    <vaadin-combo-box caption="Availability" width-full _id="availability"></vaadin-combo-box> 
+    <vaadin-option-group caption="Categories" item-caption-mode="id" width-full _id="category"> 
+     <option>Option 1</option> 
+     <option>Option 2</option> 
+     <option>Option 3</option> 
+    </vaadin-option-group> 
+   </vaadin-vertical-layout> 
    <vaadin-css-layout style-name="expander" :expand></vaadin-css-layout> 
    <vaadin-button _id="save">
      Save 
